@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Basic Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .profile {
+            background-color: #451141;
+            color: white;
+            padding: 15px 0;
+        }
+
+        .profile h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin: 0;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .gallery-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .gallery-title {
+            font-size: 2.5em;
+            font-weight: 600;
+            color: #8c1a8e;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        /* Hover Effects */
+        .gallery-item:hover {
+            transform: scale(1.05);
+            z-index: 1;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            border-radius: 15px;
+        }
+
+        .gallery-item:hover .overlay {
+            opacity: 1;
+        }
+
+        .overlay-text {
+            color: white;
+            font-size: 1.5em;
+            font-weight: 600;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="profile">
+        <h1>Enhypen Gallery</h1>
+    </div>
+
+    <!-- Sunghoon -->
+
+    <div class="gallery-container">
+        <h2 class="gallery-title"><a href="profile.html#sunghoon" style="text-decoration: none;">SUNGHOON</a></h2>
+        <div class="gallery">
+            <div class="gallery-item" id="sunghoon-section">
+                <img src="/gallery/sunghoon/s1.jpg" alt="Image 1">
+                <div class="overlay">
+                    <div class="overlay-text">Image 1 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/sunghoon/s2.jpg" alt="Image 2">
+                <div class="overlay">
+                    <div class="overlay-text">Image 2 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/sunghoon/s3.jpg" alt="Image 3">
+                <div class="overlay">
+                    <div class="overlay-text">Image 3 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/sunghoon/s4.jpg" alt="Image 4">
+                <div class="overlay">
+                    <div class="overlay-text">Image 4 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/sunghoon/s5.jpg" alt="Image 5">
+                <div class="overlay">
+                    <div class="overlay-text">Image 5 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/sunghoon/s6.jpg" alt="Image 6">
+                <div class="overlay">
+                    <div class="overlay-text">Image 6 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/sunghoon/s7.jpg" alt="Image 7">
+                <div class="overlay">
+                    <div class="overlay-text">Image 7 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/sunghoon/s8.jpg" alt="Image 8">
+                <div class="overlay">
+                    <div class="overlay-text">Image 8 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/sunghoon/s9.jpg" alt="Image 9">
+                <div class="overlay">
+                    <div class="overlay-text">Image 9 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/sunghoon/s10.jpg" alt="Image 10">
+                <div class="overlay">
+                    <div class="overlay-text">Image 10 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/sunghoon/s11.jpg" alt="Image 11">
+                <div class="overlay">
+                    <div class="overlay-text">Image 11 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/sunghoon/s12.jpg" alt="Image 12">
+                <div class="overlay">
+                    <div class="overlay-text">Image 12 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/sunghoon/s13.jpg" alt="Image 13">
+                <div class="overlay">
+                    <div class="overlay-text">Image 13 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/sunghoon/s14.jpg" alt="Image 14">
+                <div class="overlay">
+                    <div class="overlay-text">Image 14 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/sunghoon/s15.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/sunghoon/s16.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/sunghoon/s17.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/sunghoon/s18.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/sunghoon/s19.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/sunghoon/s20.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/sunghoon/s21.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/sunghoon/s22.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/sunghoon/s23.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/sunghoon/s24.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/sunghoon/s25.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Heeseung -->
+
+    <div class="gallery-container">
+        <h2 class="gallery-title"><a href="profile.html#heeseung" style="text-decoration: none;">HEESEUNG</a></h2>
+        <div class="gallery">
+            <div class="gallery-item" id="heeseung-section">
+                <img src="/gallery/heesung/h1.jpg" alt="Image 1">
+                <div class="overlay">
+                    <div class="overlay-text">Image 1 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/heesung/h2.jpg" alt="Image 2">
+                <div class="overlay">
+                    <div class="overlay-text">Image 2 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/heesung/h3.jpg" alt="Image 3">
+                <div class="overlay">
+                    <div class="overlay-text">Image 3 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/heesung/h4.jpg" alt="Image 4">
+                <div class="overlay">
+                    <div class="overlay-text">Image 4 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/heesung/h5.jpg" alt="Image 5">
+                <div class="overlay">
+                    <div class="overlay-text">Image 5 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/heesung/h6.jpg" alt="Image 6">
+                <div class="overlay">
+                    <div class="overlay-text">Image 6 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/heesung/h7.jpg" alt="Image 7">
+                <div class="overlay">
+                    <div class="overlay-text">Image 7 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/heesung/h8.jpg" alt="Image 8">
+                <div class="overlay">
+                    <div class="overlay-text">Image 8 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/heesung/h9.jpg" alt="Image 9">
+                <div class="overlay">
+                    <div class="overlay-text">Image 9 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/heesung/h10.jpg" alt="Image 10">
+                <div class="overlay">
+                    <div class="overlay-text">Image 10 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/heesung/h11.jpg" alt="Image 11">
+                <div class="overlay">
+                    <div class="overlay-text">Image 11 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/heesung/h12.jpg" alt="Image 12">
+                <div class="overlay">
+                    <div class="overlay-text">Image 12 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/heesung/h13.jpg" alt="Image 13">
+                <div class="overlay">
+                    <div class="overlay-text">Image 13 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/heesung/h14.jpg" alt="Image 14">
+                <div class="overlay">
+                    <div class="overlay-text">Image 14 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/heesung/h15.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/heesung/h16.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/heesung/h17.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/heesung/h18.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/heesung/h19.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/heesung/h20.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/heesung/h21.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/heesung/h22.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/heesung/h23.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/heesung/h24.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/heesung/h25.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jay -->
+
+    <div class="gallery-container">
+        <h2 class="gallery-title"><a href="profile.html#jay" style="text-decoration: none;">JAY</a></h2>
+        <div class="gallery">
+            <div class="gallery-item" id="jay-section">
+                <img src="/gallery/jay/j1.jpg" alt="Image 1">
+                <div class="overlay">
+                    <div class="overlay-text">Image 1 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jay/j2.jpg" alt="Image 2">
+                <div class="overlay">
+                    <div class="overlay-text">Image 2 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jay/j3.jpg" alt="Image 3">
+                <div class="overlay">
+                    <div class="overlay-text">Image 3 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jay/j4.jpg" alt="Image 4">
+                <div class="overlay">
+                    <div class="overlay-text">Image 4 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jay/j5.jpg" alt="Image 5">
+                <div class="overlay">
+                    <div class="overlay-text">Image 5 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jay/j6.jpg" alt="Image 6">
+                <div class="overlay">
+                    <div class="overlay-text">Image 6 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jay/j7.jpg" alt="Image 7">
+                <div class="overlay">
+                    <div class="overlay-text">Image 7 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jay/j8.jpg" alt="Image 8">
+                <div class="overlay">
+                    <div class="overlay-text">Image 8 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jay/j9.jpg" alt="Image 9">
+                <div class="overlay">
+                    <div class="overlay-text">Image 9 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jay/j10.jpg" alt="Image 10">
+                <div class="overlay">
+                    <div class="overlay-text">Image 10 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jay/j11.jpg" alt="Image 11">
+                <div class="overlay">
+                    <div class="overlay-text">Image 11 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jay/j12.jpg" alt="Image 12">
+                <div class="overlay">
+                    <div class="overlay-text">Image 12 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jay/j13.jpg" alt="Image 13">
+                <div class="overlay">
+                    <div class="overlay-text">Image 13 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jay/j14.jpg" alt="Image 14">
+                <div class="overlay">
+                    <div class="overlay-text">Image 14 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jay/j15.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jay/j16.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jay/j17.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jay/j18.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jay/j19.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jay/j20.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jay/j21.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jay/j22.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jay/j23.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jay/j24.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jay/j25.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Niki -->
+
+    <div class="gallery-container">
+        <h2 class="gallery-title"><a href="profile.html#niki" style="text-decoration: none;">NIKI</a></h2>
+        <div class="gallery">
+            <div class="gallery-item" id="niki-section">
+                <img src="/gallery/niki/n1.jpg" alt="Image 1">
+                <div class="overlay">
+                    <div class="overlay-text">Image 1 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/niki/n2.jpg" alt="Image 2">
+                <div class="overlay">
+                    <div class="overlay-text">Image 2 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/niki/n3.jpg" alt="Image 3">
+                <div class="overlay">
+                    <div class="overlay-text">Image 3 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/niki/n4.jpg" alt="Image 4">
+                <div class="overlay">
+                    <div class="overlay-text">Image 4 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/niki/n5.jpg" alt="Image 5">
+                <div class="overlay">
+                    <div class="overlay-text">Image 5 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/niki/n6.jpg" alt="Image 6">
+                <div class="overlay">
+                    <div class="overlay-text">Image 6 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/niki/n7.jpg" alt="Image 7">
+                <div class="overlay">
+                    <div class="overlay-text">Image 7 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/niki/n8.jpg" alt="Image 8">
+                <div class="overlay">
+                    <div class="overlay-text">Image 8 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/niki/n9.jpg" alt="Image 9">
+                <div class="overlay">
+                    <div class="overlay-text">Image 9 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/niki/n10.jpg" alt="Image 10">
+                <div class="overlay">
+                    <div class="overlay-text">Image 10 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/niki/n11.jpg" alt="Image 11">
+                <div class="overlay">
+                    <div class="overlay-text">Image 11 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/niki/n12.jpg" alt="Image 12">
+                <div class="overlay">
+                    <div class="overlay-text">Image 12 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/niki/n13.jpg" alt="Image 13">
+                <div class="overlay">
+                    <div class="overlay-text">Image 13 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/niki/n14.jpg" alt="Image 14">
+                <div class="overlay">
+                    <div class="overlay-text">Image 14 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/niki/n15.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/niki/n16.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/niki/n17.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/niki/n18.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/niki/n19.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/niki/n20.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/niki/n21.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/niki/n22.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/niki/n23.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/niki/n24.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/niki/n25.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Jake -->
+    <div class="gallery-container">
+        <h2 class="gallery-title"><a href="profile.html#jake" style="text-decoration: none;">JAKE</a></h2>
+        <div class="gallery">
+            <div class="gallery-item"  id="jake-section">
+                <img src="/gallery/jake/j1.jpg" alt="Image 1">
+                <div class="overlay">
+                    <div class="overlay-text">Image 1 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jake/j2.jpg" alt="Image 2">
+                <div class="overlay">
+                    <div class="overlay-text">Image 2 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jake/j3.jpg" alt="Image 3">
+                <div class="overlay">
+                    <div class="overlay-text">Image 3 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jake/j4.jpg" alt="Image 4">
+                <div class="overlay">
+                    <div class="overlay-text">Image 4 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jake/j5.jpg" alt="Image 5">
+                <div class="overlay">
+                    <div class="overlay-text">Image 5 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jake/j6.jpg" alt="Image 6">
+                <div class="overlay">
+                    <div class="overlay-text">Image 6 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jake/j7.jpg" alt="Image 7">
+                <div class="overlay">
+                    <div class="overlay-text">Image 7 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jake/j8.jpg" alt="Image 8">
+                <div class="overlay">
+                    <div class="overlay-text">Image 8 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jake/j9.jpg" alt="Image 9">
+                <div class="overlay">
+                    <div class="overlay-text">Image 9 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jake/j10.jpg" alt="Image 10">
+                <div class="overlay">
+                    <div class="overlay-text">Image 10 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jake/j11.jpg" alt="Image 11">
+                <div class="overlay">
+                    <div class="overlay-text">Image 11 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jake/j12.jpg" alt="Image 12">
+                <div class="overlay">
+                    <div class="overlay-text">Image 12 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jake/j13.jpg" alt="Image 13">
+                <div class="overlay">
+                    <div class="overlay-text">Image 13 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jake/j14.jpg" alt="Image 14">
+                <div class="overlay">
+                    <div class="overlay-text">Image 14 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jake/j15.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="/gallery/jake/j16.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="/gallery/jake/j17.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jake/j18.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jake/j19.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jake/j20.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jake/j21.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jake/j22.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jake/j23.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jake/j24.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jake/j25.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Sunoo -->
+    <div class="gallery-container">
+        <h2 class="gallery-title"><a href="profile.html#sunoo" style="text-decoration: none;">SUNOO</a></h2>
+        <div class="gallery">
+            <div class="gallery-item"  id="sunoo-section">
+                <img src="/gallery/sunoo/s1.jpg" alt="Image 1">
+                <div class="overlay">
+                    <div class="overlay-text">Image 1 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/sunoo/s2.jpg" alt="Image 2">
+                <div class="overlay">
+                    <div class="overlay-text">Image 2 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/sunoo/s3.jpg" alt="Image 3">
+                <div class="overlay">
+                    <div class="overlay-text">Image 3 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/sunoo/s4.jpg" alt="Image 4">
+                <div class="overlay">
+                    <div class="overlay-text">Image 4 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/sunoo/s5.jpg" alt="Image 5">
+                <div class="overlay">
+                    <div class="overlay-text">Image 5 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/sunoo/s6.jpg" alt="Image 6">
+                <div class="overlay">
+                    <div class="overlay-text">Image 6 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/sunoo/s7.jpg" alt="Image 7">
+                <div class="overlay">
+                    <div class="overlay-text">Image 7 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/sunoo/s8.jpg" alt="Image 8">
+                <div class="overlay">
+                    <div class="overlay-text">Image 8 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/sunoo/s9.jpg" alt="Image 9">
+                <div class="overlay">
+                    <div class="overlay-text">Image 9 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/sunoo/s10.jpg" alt="Image 10">
+                <div class="overlay">
+                    <div class="overlay-text">Image 10 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/sunoo/s11.jpg" alt="Image 11">
+                <div class="overlay">
+                    <div class="overlay-text">Image 11 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/sunoo/s12.jpg" alt="Image 12">
+                <div class="overlay">
+                    <div class="overlay-text">Image 12 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/sunoo/s13.jpg" alt="Image 13">
+                <div class="overlay">
+                    <div class="overlay-text">Image 13 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/sunoo/s14.jpg" alt="Image 14">
+                <div class="overlay">
+                    <div class="overlay-text">Image 14 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/sunoo/s15.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/sunoo/s16.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/sunoo/s17.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/sunoo/s18.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/sunoo/s19.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/sunoo/s20.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/sunoo/s21.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/sunoo/s22.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/sunoo/s23.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/sunoo/s24.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/sunoo/s25.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jungown -->
+    <div class="gallery-container">
+        <h2 class="gallery-title"><a href="profile.html#jungwon" style="text-decoration: none;">JUNGWON</a></h2>
+        <div class="gallery">
+            <div class="gallery-item"  id="jungwon-section">
+                <img src="/gallery/jungwon/j1.jpg" alt="Image 1">
+                <div class="overlay">
+                    <div class="overlay-text">Image 1 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jungwon/j2.jpg" alt="Image 2">
+                <div class="overlay">
+                    <div class="overlay-text">Image 2 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jungwon/j3.jpg" alt="Image 3">
+                <div class="overlay">
+                    <div class="overlay-text">Image 3 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jungwon/j4.jpg" alt="Image 4">
+                <div class="overlay">
+                    <div class="overlay-text">Image 4 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jungwon/j5.jpg" alt="Image 5">
+                <div class="overlay">
+                    <div class="overlay-text">Image 5 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jungwon/j6.jpg" alt="Image 6">
+                <div class="overlay">
+                    <div class="overlay-text">Image 6 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jungwon/j7.jpg" alt="Image 7">
+                <div class="overlay">
+                    <div class="overlay-text">Image 7 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jungwon/j8.jpg" alt="Image 8">
+                <div class="overlay">
+                    <div class="overlay-text">Image 8 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jungwon/j9.jpg" alt="Image 9">
+                <div class="overlay">
+                    <div class="overlay-text">Image 9 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jungwon/j10.jpg" alt="Image 10">
+                <div class="overlay">
+                    <div class="overlay-text">Image 10 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jungwon/j11.jpg" alt="Image 11">
+                <div class="overlay">
+                    <div class="overlay-text">Image 11 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jungwon/j12.jpg" alt="Image 12">
+                <div class="overlay">
+                    <div class="overlay-text">Image 12 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jungwon/j13.jpg" alt="Image 13">
+                <div class="overlay">
+                    <div class="overlay-text">Image 13 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jungwon/j14.jpg" alt="Image 14">
+                <div class="overlay">
+                    <div class="overlay-text">Image 14 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jungwon/j15.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jungwon/j16.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jungwon/j17.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jungwon/j18.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jungwon/j19.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jungwon/j20.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jungwon/j21.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jungwon/j22.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jungwon/j23.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="/gallery/jungwon/j24.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="/gallery/jungwon/j25.jpg" alt="Image 15">
+                <div class="overlay">
+                    <div class="overlay-text">Image 15 Description</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
